@@ -15,6 +15,9 @@ body,
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
+  background-image: url(./assets/Password.jpg);
+  position: relative;
+
 }
 
 .wrapper {
@@ -27,7 +30,8 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: whitesmoke;
+  
 }
 
 .card {
