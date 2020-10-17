@@ -11,7 +11,7 @@ function writePassword() {
 }
 
 // Random Password Generator  
-const random_strings = {
+const unique_strings = {
     lowercase: 'abcdefghijklmnopqrstuvwxyz',
     uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     number: '0123456789',
@@ -25,22 +25,22 @@ const random_strings = {
   
     var lowercase = window.confirm("Would you like to use lowercase letters?");
     if (lowercase) {
-      passwordCharSet += random_strings.lowercase;
+      passwordCharSet += unique_strings.lowercase;
     };
   
     var uppercase = window.confirm("Would you like to use uppercase letters?");
     if (uppercase) {
-      passwordCharSet += random_strings.uppercase;
+      passwordCharSet += unique_strings.uppercase;
     };
   
     var symbols = window.confirm("Would you like to use symbols?");
     if (symbols) {
-      passwordCharSet += random_strings.symbol;
+      passwordCharSet += unique_strings.symbol;
     };
   
     var numbers = window.confirm("Would you like to use numbers?");
     if (numbers) {
-      passwordCharSet += random_strings.number;
+      passwordCharSet += unique_strings.number;
     };
     var password = "";
     for (let i = 0; i < length; i++) {
